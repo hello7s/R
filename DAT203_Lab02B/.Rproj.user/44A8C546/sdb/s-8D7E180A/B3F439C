@@ -1,0 +1,18 @@
+{
+    "contents" : "## Set a flag to define the environment \nAzure = FALSE \nif(Azure){ \n  ## If in Azure, read the input data table into a data frame    \n  frame1 <- maml.mapInputPort(1) \n} else { \n  ## If in RStudio read the local .csv file   \n  dirName <- \"C:/Users/root/Documents/GitHub/R/DAT203_Lab02B\"   \n  fileName <- \"cadairydata.csv\"\n  infile <- file.path(dirName, fileName) \n  frame1 <- read.csv( infile, header = TRUE, stringsAsFactors = FALSE) }  \n\n## Select a subset of columns\nlibrary(dplyr) \nframe1 <- select(frame1, Year, Month, Cottagecheese.Prod, Icecream.Prod, Milk.Prod) \n\n# chain verbs to show totals for August \nframe1 <- frame1 %>%\n  filter(Month == 'Aug') %>% \n  mutate(Total.Prod = Cottagecheese.Prod + Icecream.Prod + Milk.Prod) \n\n## If in Azure output the data frame. \nif(Azure) maml.mapOutputPort('frame1') \n",
+    "created" : 1444141307029.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2348538647",
+    "id" : "B3F439C",
+    "lastKnownWriteTime" : 1444145364,
+    "path" : "~/GitHub/R/DAT203_Lab02B/TransformDairyDataR.R",
+    "project_path" : "TransformDairyDataR.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "frame1 <- maml.mapInputPort(1)\n\n## Remove outliers \nlibrary(dplyr)\nframe1 <- frame1 %>% filter(FFMC > 40) %>% \n                     filter(ISI < 30) %>% \n                     filter(rain < 3)\n\n## Output the data frame\nmaml.mapOutputPort('frame1')\n",
+    "created" : 1444154078659.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "822097212",
+    "id" : "ED1E8C17",
+    "lastKnownWriteTime" : 1439927356,
+    "path" : "~/GitHub/R/DAT203x_LAB02D/CleanForestFires.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
