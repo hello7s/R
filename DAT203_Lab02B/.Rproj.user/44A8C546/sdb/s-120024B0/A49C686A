@@ -1,0 +1,18 @@
+{
+    "contents" : "# What is the answer to the universe?\nmy_numeric <- 42.5\n\n# The quotation marks indicate that the variable is of type character\nmy_character <- \"some text\"\n\n# Change the value of my_logical\nmy_logical <- TRUE\n\n# Assign a value to the variable called my_apples\nmy_apples <- 5 \n\n# Print out the value of my_apples\nmy_apples       \n\n# Assign a value to the variable my_oranges and print it out\nmy_oranges <- 6\nmy_oranges \n\n# New variable that contains the total amount of fruit\nmy_fruit <- my_apples + my_oranges \nmy_fruit",
+    "created" : 1444155345972.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2315621142",
+    "id" : "A49C686A",
+    "lastKnownWriteTime" : 1444155469,
+    "path" : "~/GitHub/R/Coercions.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
